@@ -15,7 +15,3 @@ def build_dataset_dall_e(dataset, num_shot):
             selected_indices.extend(random.sample(indices, num_shot))
     subset_dataset = Subset(dataset, selected_indices)    
     return subset_dataset
-
-
-
-
