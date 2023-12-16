@@ -1,7 +1,7 @@
 from torch.utils.data import Subset
 from collections import defaultdict
 
-def build_dataset_dall_e(dataset, num_shot):
+def build_dataset(dataset, num_shot):
     class_indices = defaultdict(list)
     for i, element in enumerate(dataset.samples):
         class_indices[element[1]].append(i)
